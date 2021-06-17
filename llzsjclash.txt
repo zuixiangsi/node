@@ -1,0 +1,4 @@
+proxies:
+  - {name: 🇷🇺 俄罗斯-理论全国电信停机(广州可尝试)-0.1x, server: els.jklist.ml, port: 83, type: vmess, uuid: bb2f3de7-3acb-4417-8bc4-c06eb6938da8, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /TS/recharge/tzUrl.html, ws-headers: {Host: www.189.cn}}
+  - {name: 🇸🇬 新加坡1(白嫖机)-只能翻墙不能添加host-用上你的大屌去嫖-嫖不挂说明屌不行-0.1x, server: qj.jklist.ga, port: 80, type: vmess, uuid: bb2f3de7-3acb-4417-8bc4-c06eb6938da8, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: qj.jklist.ga}}
+  - {name: 🇸🇬 新加坡2-aga-内置电信a.189.cn混淆, server: sg.jklist.ga, port: 8080, type: vmess, uuid: bb2f3de7-3acb-4417-8bc4-c06eb6938da8, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /TS/recharge/tzUrl.html, ws-headers: {Host: a.189.cn}}
