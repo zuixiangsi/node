@@ -5,43 +5,43 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 比利时 扎芬特姆 1|17.56Mb, server: 91.90.123.115, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
-  - {name: 🇩🇪 德国 柏林 5|26.36Mb, server: 193.29.106.197, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
-  - {name: 🇮🇳 印度 7|29.73Mb, server: 137.59.52.107, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇺🇸 美国 圣路易斯 9|16.33Mb, server: 148.72.169.213, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇫🇷 法国 11|16.77Mb, server: ss.fr.sshmax.net, port: 1443, type: ss, cipher: chacha20-ietf-poly1305, password: 6nhHHuGHw2D5}
+  - {name: 美国1 | 圣路易斯|快, server: 148.72.169.213, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 比利时1 | 扎芬特姆|快, server: 91.90.123.115, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
+  - {name: 德国1 | 柏林 | 快, server: 193.29.106.197, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+  - {name: 印度1 | 中, server: 137.59.52.107, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 法国1 | 慢, server: ss.fr.sshmax.net, port: 1443, type: ss, cipher: chacha20-ietf-poly1305, password: 6nhHHuGHw2D5}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 比利时 扎芬特姆 1|17.56Mb
-      - 🇩🇪 德国 柏林 5|26.36Mb
-      - 🇮🇳 印度 7|29.73Mb
-      - 🇺🇸 美国 圣路易斯 9|16.33Mb
-      - 🇫🇷 法国 11|16.77Mb
+      - 美国1 | 圣路易斯|快|美国1 | 圣路易斯|快
+      - 比利时1 | 扎芬特姆|快|比利时1 | 扎芬特姆|快
+      - 德国1 | 柏林 | 快|德国1 | 柏林 | 快
+      - 印度1 | 中|印度1 | 中
+      - 法国1 | 慢|法国1 | 慢
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 比利时 扎芬特姆 1|17.56Mb
-      - 🇩🇪 德国 柏林 5|26.36Mb
-      - 🇮🇳 印度 7|29.73Mb
-      - 🇺🇸 美国 圣路易斯 9|16.33Mb
-      - 🇫🇷 法国 11|16.77Mb
+      - 美国1 | 圣路易斯|快|美国1 | 圣路易斯|快
+      - 比利时1 | 扎芬特姆|快|比利时1 | 扎芬特姆|快
+      - 德国1 | 柏林 | 快|德国1 | 柏林 | 快
+      - 印度1 | 中|印度1 | 中
+      - 法国1 | 慢|法国1 | 慢
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 比利时 扎芬特姆 1|17.56Mb
-      - 🇩🇪 德国 柏林 5|26.36Mb
-      - 🇮🇳 印度 7|29.73Mb
-      - 🇺🇸 美国 圣路易斯 9|16.33Mb
-      - 🇫🇷 法国 11|16.77Mb
+      - 美国1 | 圣路易斯|快|美国1 | 圣路易斯|快
+      - 比利时1 | 扎芬特姆|快|比利时1 | 扎芬特姆|快
+      - 德国1 | 柏林 | 快|德国1 | 柏林 | 快
+      - 印度1 | 中|印度1 | 中
+      - 法国1 | 慢|法国1 | 慢
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -52,32 +52,32 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 比利时 扎芬特姆 1|17.56Mb
-      - 🇩🇪 德国 柏林 5|26.36Mb
-      - 🇮🇳 印度 7|29.73Mb
-      - 🇺🇸 美国 圣路易斯 9|16.33Mb
-      - 🇫🇷 法国 11|16.77Mb
+      - 美国1 | 圣路易斯|快|美国1 | 圣路易斯|快
+      - 比利时1 | 扎芬特姆|快|比利时1 | 扎芬特姆|快
+      - 德国1 | 柏林 | 快|德国1 | 柏林 | 快
+      - 印度1 | 中|印度1 | 中
+      - 法国1 | 慢|法国1 | 慢
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 比利时 扎芬特姆 1|17.56Mb
-      - 🇩🇪 德国 柏林 5|26.36Mb
-      - 🇮🇳 印度 7|29.73Mb
-      - 🇺🇸 美国 圣路易斯 9|16.33Mb
-      - 🇫🇷 法国 11|16.77Mb
+      - 美国1 | 圣路易斯|快|美国1 | 圣路易斯|快
+      - 比利时1 | 扎芬特姆|快|比利时1 | 扎芬特姆|快
+      - 德国1 | 柏林 | 快|德国1 | 柏林 | 快
+      - 印度1 | 中|印度1 | 中
+      - 法国1 | 慢|法国1 | 慢
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 比利时 扎芬特姆 1|17.56Mb
-      - 🇩🇪 德国 柏林 5|26.36Mb
-      - 🇮🇳 印度 7|29.73Mb
-      - 🇺🇸 美国 圣路易斯 9|16.33Mb
-      - 🇫🇷 法国 11|16.77Mb
+      - 美国1 | 圣路易斯|快|美国1 | 圣路易斯|快
+      - 比利时1 | 扎芬特姆|快|比利时1 | 扎芬特姆|快
+      - 德国1 | 柏林 | 快|德国1 | 柏林 | 快
+      - 印度1 | 中|印度1 | 中
+      - 法国1 | 慢|法国1 | 慢
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -93,11 +93,11 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 比利时 扎芬特姆 1|17.56Mb
-      - 🇩🇪 德国 柏林 5|26.36Mb
-      - 🇮🇳 印度 7|29.73Mb
-      - 🇺🇸 美国 圣路易斯 9|16.33Mb
-      - 🇫🇷 法国 11|16.77Mb
+      - 美国1 | 圣路易斯|快|美国1 | 圣路易斯|快
+      - 比利时1 | 扎芬特姆|快|比利时1 | 扎芬特姆|快
+      - 德国1 | 柏林 | 快|德国1 | 柏林 | 快
+      - 印度1 | 中|印度1 | 中
+      - 法国1 | 慢|法国1 | 慢
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
